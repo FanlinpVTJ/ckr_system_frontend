@@ -1,4 +1,5 @@
 using Cysharp.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace CkrSystem.Network
 {
@@ -6,8 +7,8 @@ namespace CkrSystem.Network
     {
         private readonly UniTaskCompletionSource<HttpResponse<TResponse>> _completionSource = new UniTaskCompletionSource<HttpResponse<TResponse>>();
 
-        public HttpRequest(RequestScopeType scopeType, string url)
-            : base(scopeType, url)
+        public HttpRequest(RequestScopeType scopeType, string url, HttpMethodType methodType = HttpMethodType.Get, string requestBody = "", List<HttpHeader> headers = null)
+            : base(scopeType, url, methodType, requestBody, headers ?? new List<HttpHeader>())
         {
         }
 
