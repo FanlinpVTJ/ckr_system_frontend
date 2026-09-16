@@ -4,8 +4,7 @@ using Zenject;
 
 namespace CkrSystem.Network.Features.Weather
 {
-    [CreateAssetMenu(fileName = "Weather Network Installer", menuName = "CKR System/Weather/Network Installer")]
-    public class WeatherNetworkInstaller : ScriptableObjectInstaller
+    public class WeatherNetworkInstaller : MonoInstaller
     {
         [SerializeField] private WeatherEndpointConfig _endpointConfig;
 

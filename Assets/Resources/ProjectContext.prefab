@@ -45,8 +45,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4e6589720da476459dc6dd71624b071, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scriptableObjectInstallers: []
-  _monoInstallers: []
+  _scriptableObjectInstallers:
+  - {fileID: 11400000, guid: b8b18da3a33c96b478774e013f300a1c, type: 2}
+  _monoInstallers:
+  - {fileID: 1739002907924952492}
+  - {fileID: 219483860940271592}
   _installerPrefabs: []
   _parentNewObjectsUnderContext: 1
   _editorReflectionBakingCoverageMode: 0
@@ -70,6 +73,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8433741885547941934}
+  - component: {fileID: 1739002907924952492}
+  - component: {fileID: 219483860940271592}
   m_Layer: 0
   m_Name: Network
   m_TagString: Untagged
@@ -92,3 +97,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4859836848948460188}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1739002907924952492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7517125077860489776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3d6c1f6d0434b240a48232f7708d9b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _endpointConfig: {fileID: 11400000, guid: 59d6b6ac268be8d4e82ac0ba44f0c283, type: 2}
+--- !u!114 &219483860940271592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7517125077860489776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e286c2a9938f97245a06d4b106f96a65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _endpointConfig: {fileID: 11400000, guid: ae00c870caf0c2d4eb3da41262c29024, type: 2}

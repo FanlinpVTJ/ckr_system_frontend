@@ -4,8 +4,7 @@ using Zenject;
 
 namespace CkrSystem.Network.Features.Dogs
 {
-    [CreateAssetMenu(fileName = "Dog Network Installer", menuName = "CKR System/Dogs/Network Installer")]
-    public class DogNetworkInstaller : ScriptableObjectInstaller
+    public class DogNetworkInstaller : MonoInstaller
     {
         [SerializeField] private DogEndpointConfig _endpointConfig;
 
