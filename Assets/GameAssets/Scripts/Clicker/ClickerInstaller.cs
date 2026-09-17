@@ -10,9 +10,7 @@ namespace CkrSystem.Clicker
         public override void InstallBindings()
         {
             Container.BindInstance(_clickerConfig).AsSingle();
-            Container.Bind<ClickerView>().FromComponentInHierarchy().AsSingle();
             Container.BindInterfacesAndSelfTo<ClickerService>().AsSingle();
-            Container.BindInterfacesAndSelfTo<ClickerPresenter>().AsSingle();
         }
     }
 }
