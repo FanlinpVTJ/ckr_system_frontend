@@ -1,4 +1,3 @@
-using ValueSystem.Save;
 using System.Collections.Generic;
 
 namespace ValueSystem.Base
@@ -9,30 +8,21 @@ namespace ValueSystem.Base
 
 		private readonly ValueData[] _datas;
 
-		private ValuesSave _save;
 
 		private Dictionary<string, ValueHandler> _valueHandlers;
 
-		public ValueSystemLogic(ValueData[] datas, ValuesSave save = null)
-		{
-			_valueHandlers = new();
-			_datas = datas;
+        public ValueSystemLogic(ValueData[] datas)
+        {
+            _valueHandlers = new();
+            _datas = datas;
+            foreach (var data in _datas)
+            {
+                if (!data) continue;
 
-			if (save != null)
-				Setup(save);
-		}
-
-		public void Setup(ValuesSave save)
-		{
-			_save = save;
-
-			foreach (var data in _datas)
-			{
-				if (!data) continue;
-
-				_valueHandlers.Add(data.Id, new(_save, data));
-			}
-		}
+                ValueHandler valueHandler = new(data, data.DefaulCount);
+                _valueHandlers.Add(data.Id, valueHandler);
+            }
+        }
 
 		public ValueHandler GetValueHandler(string valueID)
 		{

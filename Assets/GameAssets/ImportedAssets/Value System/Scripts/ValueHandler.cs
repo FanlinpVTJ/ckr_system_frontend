@@ -1,4 +1,3 @@
-using ValueSystem.Save;
 using System;
 
 namespace ValueSystem
@@ -17,7 +16,6 @@ namespace ValueSystem
             private set
             {
                 _value = value;
-                _save.UpdateValue(Data.Id, _value);
                 OnValueChanged?.Invoke();
             }
         }
@@ -28,16 +26,12 @@ namespace ValueSystem
         public float MinCount => Data.MinCount;
         public bool IsFullFilled => IsInfinite ? false : Value >= MaxCount;
 
-        private readonly ValuesSave _save;
-
         private float _value;
 
-        public ValueHandler(ValuesSave save, ValueData data)
+        public ValueHandler(ValueData data, float value)
         {
-            _save = save;
-
             Data = data;
-            Value = _save.GetValue(Id, data.DefaulCount);
+            Value = value;
         }
 
         public bool CanSubtract(float amount)
@@ -92,10 +86,6 @@ namespace ValueSystem
             Value = value;
         }
 
-        public void Save()
-        {
-            _save.UpdateValue(Id, _value);
-        }
     }
 }
 
