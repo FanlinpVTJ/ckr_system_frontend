@@ -1,13 +1,10 @@
 ﻿using System.Collections.Generic;
-using ValueSystem.Save;
 
 namespace ValueSystem
 {
     public interface IValueSystem
     {
         IReadOnlyDictionary<string, ValueHandler> ValueHandler { get; }
-
-        void Setup(ValuesSave save);
 
         bool Change(ValueData data, float amount, bool forced = false);
         bool Change(string valueId, float amount, bool forced = false);
