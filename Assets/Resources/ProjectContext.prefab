@@ -189,6 +189,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _clickerConfig: {fileID: 11400000, guid: ae5c74d030fffcd428ff10d179cffe8e, type: 2}
+--- !u!1 &1237516441604716570
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4042327876089430603}
+  - component: {fileID: 2681050765653415453}
+  m_Layer: 0
+  m_Name: NetworkError
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4042327876089430603
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237516441604716570}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4859836848948460188}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2681050765653415453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237516441604716570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03000873427fd83418763df658de79ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _networkErrorWindowData: {fileID: 11400000, guid: 7b911c915808ee347bd16ed5662c126c, type: 2}
 --- !u!1 &2072768089657112195
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,6 +278,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6277b32ea2426943a7938efee3f87ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &4217870026711409243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6389611942525115606}
+  - component: {fileID: 8775368341078728986}
+  m_Layer: 0
+  m_Name: DogBreed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6389611942525115606
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4217870026711409243}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4859836848948460188}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8775368341078728986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4217870026711409243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d3830b59b62b4f4f822a899b23db7b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dogBreedDetailsWindowData: {fileID: 11400000, guid: 66525bb76776f494b8763a51117d3822, type: 2}
 --- !u!1 &5529303529548855604
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,6 +358,8 @@ Transform:
   - {fileID: 8119681577730610149}
   - {fileID: 6300953304769020373}
   - {fileID: 8149113853095692728}
+  - {fileID: 4042327876089430603}
+  - {fileID: 6389611942525115606}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4305377687113761640
@@ -285,6 +377,8 @@ MonoBehaviour:
   _scriptableObjectInstallers:
   - {fileID: 11400000, guid: b8b18da3a33c96b478774e013f300a1c, type: 2}
   - {fileID: 11400000, guid: ec1eda97875b8014ea239dcdf45c7b72, type: 2}
+  - {fileID: 11400000, guid: 382a7e1437ca7ef43a06488a41245c21, type: 2}
+  - {fileID: 11400000, guid: 5033c31f1616b484083989d65f393da2, type: 2}
   _monoInstallers:
   - {fileID: 1739002907924952492}
   - {fileID: 219483860940271592}
@@ -292,6 +386,8 @@ MonoBehaviour:
   - {fileID: 1590821715043991794}
   - {fileID: 1449223433983361936}
   - {fileID: 2327610303639009914}
+  - {fileID: 2681050765653415453}
+  - {fileID: 8775368341078728986}
   _installerPrefabs: []
   _parentNewObjectsUnderContext: 1
   _editorReflectionBakingCoverageMode: 0
