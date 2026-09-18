@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
 using NUnit.Framework;
 
-namespace CkrSystem.Network.Tests
+namespace FeaturedClicker.Network.Tests
 {
     public class RequestQueueServiceTests
     {

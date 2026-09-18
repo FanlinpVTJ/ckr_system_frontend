@@ -1,6 +1,6 @@
 using Zenject;
 
-namespace CkrSystem.Save
+namespace FeaturedClicker.Save
 {
     public class SaveSystemInstaller : MonoInstaller
     {
@@ -9,7 +9,7 @@ namespace CkrSystem.Save
             Container.Bind<ISaveSystem>().To<PlayerPrefsSaveSystem>().AsSingle();
             Container.Bind<ISaveParticipant>().To<ValueSaveParticipant>().AsSingle();
             Container.Bind<SaveCoordinator>().AsSingle();
-            Container.BindInterfacesAndSelfTo<SaveSystemLifecycleHandler>().AsSingle();
+            Container.BindInterfacesAndSelfTo<SaveSystemLifecycleHandler>().AsSingle().NonLazy();
         }
     }
 }

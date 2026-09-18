@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
 using ValueSystem;
 
-namespace CkrSystem.Save
+namespace FeaturedClicker.Save
 {
     public class ValueSaveParticipant : ISaveParticipant
     {
@@ -10,6 +10,8 @@ namespace CkrSystem.Save
 
         private readonly IValueSystem _valueSystem;
         private readonly ISaveSystem _saveSystem;
+
+        private bool _isSubscribed;
 
         public ValueSaveParticipant(IValueSystem valueSystem, ISaveSystem saveSystem)
         {
@@ -25,6 +27,8 @@ namespace CkrSystem.Save
             {
                 _valueSystem.SetValue(entry.Id, entry.Amount);
             }
+
+            SubscribeToValueChanges();
         }
 
         public UniTask SaveAsync()
@@ -40,6 +44,26 @@ namespace CkrSystem.Save
             }
 
             return _saveSystem.SaveAsync(SAVE_KEY, saveData);
+        }
+
+        private void SubscribeToValueChanges()
+        {
+            if (_isSubscribed)
+            {
+                return;
+            }
+
+            foreach (ValueHandler valueHandler in _valueSystem.ValueHandler.Values)
+            {
+                valueHandler.OnValueChanged += SaveValues;
+            }
+
+            _isSubscribed = true;
+        }
+
+        private void SaveValues()
+        {
+            SaveAsync().Forget();
         }
     }
 }

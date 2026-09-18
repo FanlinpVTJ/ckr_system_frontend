@@ -2,7 +2,7 @@ using System;
 using Cysharp.Threading.Tasks;
 using Zenject;
 
-namespace CkrSystem.Save
+namespace FeaturedClicker.Save
 {
     public class SaveSystemLifecycleHandler : IInitializable, IDisposable
     {

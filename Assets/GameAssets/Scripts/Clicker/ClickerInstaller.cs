@@ -1,7 +1,7 @@
 using UnityEngine;
 using Zenject;
 
-namespace CkrSystem.Clicker
+namespace FeaturedClicker.Clicker
 {
     public class ClickerInstaller : MonoInstaller
     {

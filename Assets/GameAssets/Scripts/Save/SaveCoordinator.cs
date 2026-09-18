@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
 
-namespace CkrSystem.Save
+namespace FeaturedClicker.Save
 {
     public class SaveCoordinator
     {

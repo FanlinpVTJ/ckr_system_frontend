@@ -1,4 +1,4 @@
-namespace CkrSystem.Sound
+namespace FeaturedClicker.Sound
 {
     public interface ISoundManager
     {

@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 
-namespace CkrSystem.Network
+namespace FeaturedClicker.Network
 {
     public class JsonConverter : IJsonConverter
     {

@@ -1,7 +1,7 @@
 using UnityEngine;
 using Cysharp.Threading.Tasks;
 
-namespace CkrSystem.Save
+namespace FeaturedClicker.Save
 {
     public class PlayerPrefsSaveSystem : ISaveSystem
     {

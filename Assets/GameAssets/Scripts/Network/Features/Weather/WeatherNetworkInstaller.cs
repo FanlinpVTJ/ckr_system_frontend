@@ -1,8 +1,8 @@
-using CkrSystem.Network;
+using FeaturedClicker.Network;
 using UnityEngine;
 using Zenject;
 
-namespace CkrSystem.Network.Features.Weather
+namespace FeaturedClicker.Network.Features.Weather
 {
     public class WeatherNetworkInstaller : MonoInstaller
     {

@@ -1,8 +1,8 @@
-using CkrSystem.Network;
+using FeaturedClicker.Network;
 using UnityEngine;
 using Zenject;
 
-namespace CkrSystem.Network.Features.Dogs
+namespace FeaturedClicker.Network.Features.Dogs
 {
     public class DogNetworkInstaller : MonoInstaller
     {

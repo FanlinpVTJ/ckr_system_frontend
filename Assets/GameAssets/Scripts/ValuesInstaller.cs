@@ -2,7 +2,7 @@ using UnityEngine;
 using ValueSystem.Base;
 using Zenject;
 
-namespace ValueSystem.Zenject
+namespace ValueSystem
 {
     [CreateAssetMenu(fileName = "Values Installer", menuName = "Installers/Values Installer")]
     public class ValuesInstaller : ScriptableObjectInstaller<ValuesInstaller>

@@ -1,4 +1,4 @@
-using CkrSystem.Sound;
+using FeaturedClicker.Sound;
 using Coffee.UIExtensions;
 using System;
 using UnityEngine;
@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using WindowsManager.UI;
 using Zenject;
 
-namespace CkrSystem.Clicker
+namespace FeaturedClicker.Clicker
 {
     public class ClickerView : MonoBehaviour
     {
