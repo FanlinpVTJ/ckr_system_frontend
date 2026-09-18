@@ -1,5 +1,7 @@
 using System;
+using Coffee.UIExtensions;
 using TMPro;
+using TweenComponents.Base;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,8 +12,8 @@ namespace CkrSystem.Clicker
         public event Action OnCollectionButtonClicked;
 
         [SerializeField] private Button _collectionButton;
-        [SerializeField] private TMP_Text _currencyText;
-        [SerializeField] private TMP_Text _energyText;
+        [SerializeField] private UIParticle _collectionUIParticle;
+        [SerializeField] private TweenBase _collectionButtonTween;
 
         private void Awake()
         {
@@ -23,18 +25,10 @@ namespace CkrSystem.Clicker
             _collectionButton.onClick.RemoveListener(HandleCollectionButtonClick);
         }
 
-        public void SetCurrency(float currency)
-        {
-            _currencyText.text = currency.ToString();
-        }
-
-        public void SetEnergy(float energy)
-        {
-            _energyText.text = energy.ToString();
-        }
-
         public void PlayCollectionEffects()
         {
+            _collectionButtonTween.Execute();
+            _collectionUIParticle.Play();
         }
 
         private void HandleCollectionButtonClick()

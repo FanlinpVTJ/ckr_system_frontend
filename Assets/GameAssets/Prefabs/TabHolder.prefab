@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3920467600900114022}
   - component: {fileID: 2355437451872863216}
   - component: {fileID: 8462495832711928993}
+  - component: {fileID: 6284413584371270319}
   m_Layer: 5
   m_Name: TabButton
   m_TagString: Untagged
@@ -69,7 +70,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5532b4af1b9e5674d866351736fe3dbb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 20bf29e9e04408c44bd1e5778c1436bf, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -78,7 +79,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 0.65
 --- !u!114 &2355437451872863216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,16 +140,30 @@ MonoBehaviour:
   _lockedtabIcon: {fileID: 5077838269653959989}
   _text: {fileID: 547915928319820450}
   _visualSettings:
-    _selectedBackgroundSprite: {fileID: 21300000, guid: 1b1fda64524972f4999a07e9f572ed2e, type: 3}
-    _unselectedBackgroundSprite: {fileID: 21300000, guid: 5532b4af1b9e5674d866351736fe3dbb, type: 3}
+    _selectedBackgroundSprite: {fileID: 21300000, guid: 339c357aeaa82384390fc113a765cdc0, type: 3}
+    _unselectedBackgroundSprite: {fileID: 21300000, guid: 20bf29e9e04408c44bd1e5778c1436bf, type: 3}
     _disabledBackgroundSprite: {fileID: 21300000, guid: 8ebaf813a4a9c9149b87256cb1423554, type: 3}
   _animationSettings:
     _selectedTabYPosition: 30
     _unselectedTabYPosition: 0
-  _objects: []
-  _isActiveTab: 0
+  _objects:
+  - {fileID: 0}
+  _isActiveTab: 1
   _isSelectedTab: 0
   _rectTransform: {fileID: 1784858366766700302}
+--- !u!114 &6284413584371270319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112978176111864871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 191d8b23a8713664690ed782a528cbba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundId: ui_sound
 --- !u!1 &547915928319820450
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,14 +232,14 @@ MonoBehaviour:
   m_text: Text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2651519664d71224ca8680eff1385c0c, type: 2}
-  m_sharedMaterial: {fileID: -4944108211663952307, guid: 2651519664d71224ca8680eff1385c0c, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: ec26547e4d06f4843bfbcaabe74f734d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -241,8 +256,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 70
+  m_fontSizeBase: 70
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

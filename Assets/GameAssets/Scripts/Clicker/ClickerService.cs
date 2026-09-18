@@ -32,7 +32,14 @@ namespace CkrSystem.Clicker
             ProcessEnergyRecovery();
         }
 
-        public bool TryCollect()
+        public bool TryCollectManually()
+        {
+            _automaticCollectionElapsedTime = 0;
+
+            return TryCollect();
+        }
+
+        private bool TryCollect()
         {
             if (!_valueSystem.TrySubtract(_clickerConfig.EnergyValueData, _clickerConfig.CollectionEnergyCost))
             {
