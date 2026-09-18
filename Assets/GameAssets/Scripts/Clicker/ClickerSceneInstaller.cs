@@ -1,0 +1,14 @@
+using Zenject;
+
+namespace FeaturedClicker.Clicker
+{
+    public class ClickerSceneInstaller : MonoInstaller
+    {
+        public override void InstallBindings()
+        {
+            Container.Bind<ClickerView>().FromComponentInHierarchy().AsSingle();
+            Container.Bind<CurrencyFlightEffect>().FromComponentInHierarchy().AsSingle();
+            Container.BindInterfacesAndSelfTo<ClickerPresenter>().AsSingle();
+        }
+    }
+}
