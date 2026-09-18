@@ -1,4 +1,4 @@
-namespace CkrSystem.Network.Features.Dogs
+namespace FeaturedClicker.Network.Features.Dogs
 {
     public class DogBreedData
     {

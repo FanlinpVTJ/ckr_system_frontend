@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace CkrSystem.Weather
+namespace FeaturedClicker.Weather
 {
     [CreateAssetMenu(fileName = "Weather Icon Config", menuName = "CKR System/Weather/Icon Config")]
     public class WeatherIconConfig : ScriptableObject

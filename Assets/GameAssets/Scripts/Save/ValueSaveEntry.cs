@@ -1,6 +1,6 @@
 using System;
 
-namespace CkrSystem.Save
+namespace FeaturedClicker.Save
 {
     [Serializable]
     public class ValueSaveEntry

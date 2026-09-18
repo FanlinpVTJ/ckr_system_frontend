@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace CkrSystem.Network
+namespace FeaturedClicker.Network
 {
     public abstract class HttpRequestBase
     {

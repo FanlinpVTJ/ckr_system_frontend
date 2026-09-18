@@ -1,11 +1,11 @@
 using System;
-using CkrSystem.Network;
-using CkrSystem.Network.Features.Dogs;
-using CkrSystem.Network.UI;
+using FeaturedClicker.Network;
+using FeaturedClicker.Network.Features.Dogs;
+using FeaturedClicker.Network.UI;
 using Cysharp.Threading.Tasks;
 using Zenject;
 
-namespace CkrSystem.Dogs
+namespace FeaturedClicker.Dogs
 {
     public class DogBreedsPresenter : IInitializable, IDisposable
     {

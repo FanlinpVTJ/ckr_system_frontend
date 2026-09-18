@@ -1,6 +1,6 @@
-using CkrSystem.Network.Features.Weather;
+using FeaturedClicker.Network.Features.Weather;
 
-namespace CkrSystem.Weather
+namespace FeaturedClicker.Weather
 {
     public class WeatherForecastMapper
     {

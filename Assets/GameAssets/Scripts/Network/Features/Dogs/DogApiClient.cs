@@ -1,7 +1,7 @@
 using Cysharp.Threading.Tasks;
-using CkrSystem.Network;
+using FeaturedClicker.Network;
 
-namespace CkrSystem.Network.Features.Dogs
+namespace FeaturedClicker.Network.Features.Dogs
 {
     public class DogApiClient
     {

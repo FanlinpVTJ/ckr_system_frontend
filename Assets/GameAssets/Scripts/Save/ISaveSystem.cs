@@ -1,6 +1,6 @@
 using Cysharp.Threading.Tasks;
 
-namespace CkrSystem.Save
+namespace FeaturedClicker.Save
 {
     public interface ISaveSystem
     {

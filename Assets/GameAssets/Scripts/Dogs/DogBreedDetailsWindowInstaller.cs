@@ -2,7 +2,7 @@ using UnityEngine;
 using WindowsManager;
 using Zenject;
 
-namespace CkrSystem.Dogs
+namespace FeaturedClicker.Dogs
 {
     public class DogBreedDetailsWindowInstaller : MonoInstaller
     {

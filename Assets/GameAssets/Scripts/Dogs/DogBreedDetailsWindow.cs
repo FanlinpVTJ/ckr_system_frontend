@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using WindowsManager;
 
-namespace CkrSystem.Dogs
+namespace FeaturedClicker.Dogs
 {
     public class DogBreedDetailsWindow : Window
     {

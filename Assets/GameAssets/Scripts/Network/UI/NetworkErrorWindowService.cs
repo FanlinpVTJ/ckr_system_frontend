@@ -1,6 +1,6 @@
 using WindowsManager;
 
-namespace CkrSystem.Network.UI
+namespace FeaturedClicker.Network.UI
 {
     public class NetworkErrorWindowService : INetworkErrorWindowService
     {

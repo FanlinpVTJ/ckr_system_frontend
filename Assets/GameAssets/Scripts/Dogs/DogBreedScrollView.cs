@@ -1,6 +1,6 @@
 using SmartScroll;
 
-namespace CkrSystem.Dogs
+namespace FeaturedClicker.Dogs
 {
     public class DogBreedScrollView : SmartScrollViewDirectional
     {

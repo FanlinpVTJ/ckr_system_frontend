@@ -1,7 +1,7 @@
 using System;
 using Zenject;
 
-namespace CkrSystem.Clicker
+namespace FeaturedClicker.Clicker
 {
     public class ClickerPresenter : IInitializable, IDisposable
     {

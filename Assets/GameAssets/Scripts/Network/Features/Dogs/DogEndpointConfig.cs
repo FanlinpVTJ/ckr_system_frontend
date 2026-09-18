@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace CkrSystem.Network.Features.Dogs
+namespace FeaturedClicker.Network.Features.Dogs
 {
     [CreateAssetMenu(fileName = "Dog Endpoint Config", menuName = "CKR System/Dogs/Endpoint Config")]
     public class DogEndpointConfig : ScriptableObject

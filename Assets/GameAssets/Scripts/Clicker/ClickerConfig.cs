@@ -1,7 +1,7 @@
 using UnityEngine;
 using ValueSystem;
 
-namespace CkrSystem.Clicker
+namespace FeaturedClicker.Clicker
 {
     [CreateAssetMenu(fileName = "Clicker Config", menuName = "CKR System/Clicker/Config")]
     public class ClickerConfig : ScriptableObject

@@ -2,7 +2,7 @@ using UnityEngine;
 using WindowsManager.UI;
 using Zenject;
 
-namespace CkrSystem.Sound
+namespace FeaturedClicker.Sound
 {
     public class ButtonSound : AbstractButton
     {

@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using Zenject;
 
-namespace CkrSystem.Dogs
+namespace FeaturedClicker.Dogs
 {
     public class DogBreedsTabView : MonoBehaviour
     {

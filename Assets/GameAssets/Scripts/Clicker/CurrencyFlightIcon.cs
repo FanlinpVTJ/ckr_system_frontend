@@ -1,4 +1,4 @@
-using CkrSystem.Sound;
+using FeaturedClicker.Sound;
 using DG.Tweening;
 using PoolsUtility;
 using TweenComponents.Base;
@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-namespace CkrSystem.Clicker
+namespace FeaturedClicker.Clicker
 {
     public class CurrencyFlightIcon : PooledObject
     {

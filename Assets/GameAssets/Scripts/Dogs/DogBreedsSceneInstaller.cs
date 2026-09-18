@@ -1,6 +1,6 @@
 using Zenject;
 
-namespace CkrSystem.Dogs
+namespace FeaturedClicker.Dogs
 {
     public class DogBreedsSceneInstaller : MonoInstaller
     {

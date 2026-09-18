@@ -1,4 +1,4 @@
-namespace CkrSystem.Weather
+namespace FeaturedClicker.Weather
 {
     public class WeatherForecastModel
     {

@@ -1,7 +1,7 @@
 using Cysharp.Threading.Tasks;
-using CkrSystem.Network;
+using FeaturedClicker.Network;
 
-namespace CkrSystem.Network.Features.Weather
+namespace FeaturedClicker.Network.Features.Weather
 {
     public class WeatherApiClient
     {

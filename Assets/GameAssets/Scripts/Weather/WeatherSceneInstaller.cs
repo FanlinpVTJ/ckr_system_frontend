@@ -1,6 +1,6 @@
 using Zenject;
 
-namespace CkrSystem.Weather
+namespace FeaturedClicker.Weather
 {
     public class WeatherSceneInstaller : MonoInstaller
     {

@@ -2,7 +2,7 @@ using UnityEngine;
 using WindowsManager;
 using Zenject;
 
-namespace CkrSystem.Network.UI
+namespace FeaturedClicker.Network.UI
 {
     public class NetworkErrorWindowInstaller : MonoInstaller
     {

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace CkrSystem.Save
+namespace FeaturedClicker.Save
 {
     [Serializable]
     public class ValuesSaveData

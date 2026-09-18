@@ -1,6 +1,6 @@
 using WindowsManager;
 
-namespace CkrSystem.Dogs
+namespace FeaturedClicker.Dogs
 {
     public class DogBreedDetailsWindowService : IDogBreedDetailsWindowService
     {

@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace CkrSystem.Weather
+namespace FeaturedClicker.Weather
 {
     public class WeatherTabView : MonoBehaviour
     {

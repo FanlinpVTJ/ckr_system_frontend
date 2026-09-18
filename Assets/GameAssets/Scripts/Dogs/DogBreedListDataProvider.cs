@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace CkrSystem.Dogs
+namespace FeaturedClicker.Dogs
 {
     public class DogBreedListDataProvider
     {

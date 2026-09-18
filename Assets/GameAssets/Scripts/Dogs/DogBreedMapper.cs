@@ -1,6 +1,6 @@
-using CkrSystem.Network.Features.Dogs;
+using FeaturedClicker.Network.Features.Dogs;
 
-namespace CkrSystem.Dogs
+namespace FeaturedClicker.Dogs
 {
     public class DogBreedMapper
     {

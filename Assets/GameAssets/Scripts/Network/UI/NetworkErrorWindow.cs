@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using WindowsManager;
 
-namespace CkrSystem.Network.UI
+namespace FeaturedClicker.Network.UI
 {
     public class NetworkErrorWindow : Window
     {

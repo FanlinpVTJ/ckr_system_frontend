@@ -1,7 +1,7 @@
 using UnityEngine;
 using Zenject;
 
-namespace CkrSystem.Sound
+namespace FeaturedClicker.Sound
 {
     public class SoundInstaller : MonoInstaller
     {

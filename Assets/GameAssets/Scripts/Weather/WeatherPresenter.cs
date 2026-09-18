@@ -1,12 +1,12 @@
 using System;
-using CkrSystem.Network;
-using CkrSystem.Network.Features.Weather;
-using CkrSystem.Network.UI;
+using FeaturedClicker.Network;
+using FeaturedClicker.Network.Features.Weather;
+using FeaturedClicker.Network.UI;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 using Zenject;
 
-namespace CkrSystem.Weather
+namespace FeaturedClicker.Weather
 {
     public class WeatherPresenter : IInitializable, ITickable, IDisposable
     {

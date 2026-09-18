@@ -1,7 +1,7 @@
 using System.Threading;
 using Cysharp.Threading.Tasks;
 
-namespace CkrSystem.Network
+namespace FeaturedClicker.Network
 {
     public interface IHttpRequestExecutor
     {

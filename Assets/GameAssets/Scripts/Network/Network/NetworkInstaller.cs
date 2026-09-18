@@ -1,7 +1,7 @@
 using UnityEngine;
 using Zenject;
 
-namespace CkrSystem.Network
+namespace FeaturedClicker.Network
 {
     [CreateAssetMenu(fileName = "Network Installer", menuName = "CKR System/Network/Network Installer")]
     public class NetworkInstaller : ScriptableObjectInstaller

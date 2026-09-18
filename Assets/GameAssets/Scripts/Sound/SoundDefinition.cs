@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace CkrSystem.Sound
+namespace FeaturedClicker.Sound
 {
     [System.Serializable]
     public class SoundDefinition

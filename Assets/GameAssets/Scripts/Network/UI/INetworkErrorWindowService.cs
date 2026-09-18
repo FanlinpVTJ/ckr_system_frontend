@@ -1,4 +1,4 @@
-namespace CkrSystem.Network.UI
+namespace FeaturedClicker.Network.UI
 {
     public interface INetworkErrorWindowService
     {

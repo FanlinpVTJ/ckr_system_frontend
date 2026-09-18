@@ -1,6 +1,6 @@
 using System;
 
-namespace Cryptogram
+namespace FeaturedClicker.Save
 {
     public class SavableData
     {

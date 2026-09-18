@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace CkrSystem.Sound
+namespace FeaturedClicker.Sound
 {
     public class SoundManager : ISoundManager
     {

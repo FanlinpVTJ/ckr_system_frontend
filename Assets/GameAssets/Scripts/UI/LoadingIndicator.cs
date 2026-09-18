@@ -1,7 +1,7 @@
 using DG.Tweening;
 using UnityEngine;
 
-namespace CkrSystem.UI
+namespace FeaturedClicker.UI
 {
     public class LoadingIndicator : MonoBehaviour
     {

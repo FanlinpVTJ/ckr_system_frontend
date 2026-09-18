@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace CkrSystem.Sound
+namespace FeaturedClicker.Sound
 {
     [CreateAssetMenu(fileName = "Sound Config", menuName = "CKR System/Sound/Config")]
     public class SoundConfig : ScriptableObject

@@ -2,7 +2,7 @@ using System;
 using ValueSystem;
 using Zenject;
 
-namespace CkrSystem.Clicker
+namespace FeaturedClicker.Clicker
 {
     public class ClickerService : IInitializable, ITickable
     {

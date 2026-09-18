@@ -1,6 +1,6 @@
 using Zenject;
 
-namespace CkrSystem.Save
+namespace FeaturedClicker.Save
 {
     public class SaveSystemInstaller : MonoInstaller
     {

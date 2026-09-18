@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace CkrSystem.Weather
+namespace FeaturedClicker.Weather
 {
     [Serializable]
     public class WeatherIconDefinition

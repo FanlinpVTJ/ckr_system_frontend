@@ -4,7 +4,7 @@ using System.Threading;
 using Cysharp.Threading.Tasks;
 using UnityEngine.Networking;
 
-namespace CkrSystem.Network
+namespace FeaturedClicker.Network
 {
     public class UnityWebRequestExecutor : IHttpRequestExecutor
     {

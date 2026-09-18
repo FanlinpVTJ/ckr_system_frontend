@@ -1,4 +1,4 @@
-namespace CkrSystem.Network.Features.Weather
+namespace FeaturedClicker.Network.Features.Weather
 {
     public class WeatherForecastProperties
     {

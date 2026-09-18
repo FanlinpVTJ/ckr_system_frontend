@@ -1,4 +1,4 @@
-namespace CkrSystem.Network
+namespace FeaturedClicker.Network
 {
     public interface IJsonConverter
     {
