@@ -5,8 +5,16 @@ namespace WindowsManager.UI
 {
     public class ButtonPressAnimation : AbstractButton
     {
+        [SerializeField] private bool _playOnManualClick;
+
         private Tween _animation;
         public override void OnButtonClick()
+        {
+            if(_playOnManualClick)
+                PlayAnimation();
+        }
+
+        public void PlayAnimation()
         {
             if (_animation.IsActive())
                 _animation.Kill(true);

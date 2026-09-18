@@ -50,6 +50,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _iconImage: {fileID: 8539633901630237755}
+  _soundId: coins_collect
 --- !u!1 &7982288381685221261
 GameObject:
   m_ObjectHideFlags: 0

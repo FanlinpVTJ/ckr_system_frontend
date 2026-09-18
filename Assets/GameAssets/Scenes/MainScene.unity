@@ -547,6 +547,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _collectionButton: {fileID: 2141687950}
   _collectionUIParticle: {fileID: 1934807416}
+  _collectionButtonTween: {fileID: 2141687949}
+  _soundId: click
 --- !u!114 &266065758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6655,7 +6657,6 @@ GameObject:
   - component: {fileID: 2141687951}
   - component: {fileID: 2141687950}
   - component: {fileID: 2141687949}
-  - component: {fileID: 2141687953}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -6697,6 +6698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4368a50008b91574c89bf20c9654ba3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _playOnManualClick: 0
 --- !u!114 &2141687950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6779,19 +6781,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2141687947}
   m_CullTransparentMesh: 1
---- !u!114 &2141687953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2141687947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 191d8b23a8713664690ed782a528cbba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _soundId: click
 --- !u!1001 &1266305472271676699
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -11,6 +11,7 @@ namespace CkrSystem.Clicker
     public class CurrencyFlightIcon : PooledObject
     {
         [SerializeField] private Image _iconImage;
+        [SerializeField] private string _soundId;
 
         private RectTransform _rectTransform;
 
@@ -44,7 +45,7 @@ namespace CkrSystem.Clicker
                     {
                         animation.Execute();
                     }
-                    _soundManager.Play("coins_collect");
+                    _soundManager.Play(_soundId);
                 }
                 );
 

@@ -13,6 +13,7 @@ namespace CkrSystem.Clicker
 
         private float _automaticCollectionElapsedTime;
         private float _energyRecoveryElapsedTime;
+        private bool _isAutomaticCollectionEnabled;
 
         public ClickerService(ClickerConfig clickerConfig, IValueSystem valueSystem)
         {
@@ -39,6 +40,12 @@ namespace CkrSystem.Clicker
             return TryCollect();
         }
 
+        public void SetAutomaticCollectionEnabled(bool isEnabled)
+        {
+            _isAutomaticCollectionEnabled = isEnabled;
+            _automaticCollectionElapsedTime = 0;
+        }
+
         private bool TryCollect()
         {
             if (!_valueSystem.TrySubtract(_clickerConfig.EnergyValueData, _clickerConfig.CollectionEnergyCost))
@@ -54,6 +61,11 @@ namespace CkrSystem.Clicker
 
         private void ProcessAutomaticCollection()
         {
+            if (!_isAutomaticCollectionEnabled)
+            {
+                return;
+            }
+
             _automaticCollectionElapsedTime += UnityEngine.Time.deltaTime;
 
             if (_automaticCollectionElapsedTime < _clickerConfig.AutomaticCollectionInterval)
