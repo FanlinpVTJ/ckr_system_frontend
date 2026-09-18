@@ -7205,6 +7205,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8622007899535249487, guid: f834399927d2660449dd07b5332f6418, type: 3}
+      propertyPath: m_Padding.m_Bottom
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 8622007899535249487, guid: f834399927d2660449dd07b5332f6418, type: 3}
       propertyPath: m_ChildControlWidth
       value: 1
       objectReference: {fileID: 0}
@@ -7453,7 +7457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding: {x: 0, y: 0, z: 0, w: 0}
-  m_Softness: {x: 0, y: 0}
+  m_Softness: {x: 0, y: 50}
 --- !u!1001 &1775030098
 PrefabInstance:
   m_ObjectHideFlags: 0
